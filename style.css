@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background: #1ab6b1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+    width: 330px;
+
+}
+
+.display {
+    width: 95%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #e6d8b1;
+    border: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    background: #e5eef3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #e0e0e0;
+}
+
+button[data-value="="] {
+    background: #4caf50;
+    color: #fff;
+}
+
+button[data-value="="]:hover {
+    background: #45a049;
+}
+
+button[data-value="AC"] {
+    background: #f44336;
+    color: #fff;
+}
+
+button[data-value="DEL"] {
+    background: #f4a536;
+    color: #fff;
+}
+
+button[data-value="AC"]:hover,
+button[data-value="DEL"]:hover {
+    background: #e53935;
+}
